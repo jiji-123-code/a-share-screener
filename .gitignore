@@ -1,0 +1,28 @@
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ─── 日线数据缓存 ───────────────────────────────────────
+# 体积约 1.3 GB（5020 只股票），不纳入版本库。
+# 获取方式：① 自己运行 python main.py 生成（首次约 1 小时）
+#           ② 从本项目 GitHub Release 附件下载
+MACD底背离筛选系统/data/*.csv
+MACD底背离筛选系统/data/*.pkl
+
+# ─── 运行时中间产物 ─────────────────────────────────────
+progress/
+**/progress/
+*.tmp
+
+# ─── 编辑器 / 操作系统 ──────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
